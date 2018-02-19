@@ -176,7 +176,7 @@ static int is_vbi_device(const char *pathname)
       return 0;
 }
 
-int open(const char *pathname, int flags, ...)
+int (open)(const char *pathname, int flags, ...)
 {
    va_list args;
    mode_t mode = 0;
